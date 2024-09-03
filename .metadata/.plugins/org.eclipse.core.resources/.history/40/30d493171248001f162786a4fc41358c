@@ -1,0 +1,31 @@
+package TImes;
+
+import java.util.Scanner;
+
+public class timesLocation 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+	    int ar[]=new int [6];
+	    int count=0;
+	    int pos[]=new int[6];
+		for (int i=0;i<ar.length;i++)
+		{
+		 
+		 ar[i]=sc.nextInt();
+		}
+		System.out.println("please eneter the num ber to be loacted ");
+		int a=new sc.nextInt();
+		for(int i=0;i<ar.length;i++)
+		{
+			if(a==ar[i])
+			{
+				count++;
+				
+			}
+		 
+		}
+		System.out.println("you are entered"+a+"and its found "+count+"times and locations at");
+	}
+}

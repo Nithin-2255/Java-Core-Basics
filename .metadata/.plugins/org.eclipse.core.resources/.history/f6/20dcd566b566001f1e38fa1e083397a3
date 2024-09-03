@@ -1,0 +1,13 @@
+package LOGIN;
+
+import java.util.Scanner;
+
+public class studentprofile 
+{
+	static Scanner sc=new Scanner(System.in);
+	private static int id=0;
+	public studentprofile(int id) 
+	{
+		this.id = id;
+	}
+}

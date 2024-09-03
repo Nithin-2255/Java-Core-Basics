@@ -1,0 +1,32 @@
+package LOGIN;
+
+import java.util.Scanner;
+
+public class studentprofile 
+{
+	static Scanner sc=new Scanner(System.in);
+	private static int id=0;
+	public studentprofile(int id) 
+	{
+		this.id = id;
+	}
+	studprofile()
+	{
+		DBoperations o=new DBoperations();
+		staff st=o.getStaffProfilefromDB(id);
+		System.out.println("******************************************");
+		System.out.println("Hi    "+st.getEMP_NAME());
+		int n;
+		do
+		{
+		System.out.println("1:Add Student");
+		System.out.println("2:View all Student");
+		System.out.println("3:View Student by ADMN NO");
+		System.out.println("4:Add MarkList");
+		System.out.println("5:LogOut");
+		
+		System.out.println("Select an option");
+		n=sc.nextInt();
+		}while(n>2);
+	}
+}

@@ -1,0 +1,22 @@
+package vowels;
+
+public class vowelsCount 
+{
+	public static void main(String[] args) 
+	{
+		String str="101110000";
+		int a= str.length();
+		int b=str.length()-1;
+		int c=0;
+		while(a>=0&&b>=0)
+		if(str.charAt(a)==str.charAt(b))
+		{
+			++c;
+		}
+		else
+		{
+			--b;
+		}
+		
+    }
+}

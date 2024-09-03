@@ -1,0 +1,40 @@
+package LOGIN;
+
+import java.util.Scanner;
+
+public class studentprofile 
+{
+	static Scanner sc=new Scanner(System.in);
+	private static int id=0;
+	public studentprofile(int id) 
+	{
+		this.id = id;
+	}
+	void studprofile()
+	{
+		DBoperations o=new DBoperations();
+		Student st=o.getStudentprofile(id);
+		System.out.println("******************************************");
+		System.out.println("Hi    "+st.getSTUDENT_NAME());
+		int n;
+		do
+		{
+		System.out.println("1:View Prfile");
+		System.out.println("2:ViewMark");
+		System.out.println("3:LogOut");
+		
+		System.out.println("Select an option");
+		n=sc.nextInt();
+		switch(n)
+		{
+		
+		case 1:;
+				break;
+		case 2:;
+				break;
+		
+		}
+		}while(n>2);
+		
+	}
+}

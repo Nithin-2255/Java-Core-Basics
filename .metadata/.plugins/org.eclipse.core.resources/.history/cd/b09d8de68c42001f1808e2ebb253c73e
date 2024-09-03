@@ -1,0 +1,20 @@
+package Rev;
+
+import java.util.Scanner;
+
+public class revNumner 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter  number  Greater than 0")
+	    int num=sc.nextInt();
+		while(a>0)
+		{
+			
+		}
+		int rem=a%10;
+		int rev=0;
+		rev=rem*10+a/10;
+	}
+}

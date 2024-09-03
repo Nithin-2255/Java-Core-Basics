@@ -1,0 +1,27 @@
+package star;
+
+import java.util.Scanner;
+
+public class starPattern 
+	{
+	public static void main(String[] args) 
+	{
+		star(4);
+	 }
+	
+	
+	 static void star(int n)
+	{
+		for (int row=0;row<=2*n-1;row++)
+		{
+			int c=0;
+			
+			for(int col=1;col<=c;col++)
+			{
+				System.out.print(col);
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+	}
